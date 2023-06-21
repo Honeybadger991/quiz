@@ -1,0 +1,51 @@
+.error{
+    &-wrapper{
+    margin-top: 4rem;
+    flex: 1 1 auto;
+    }
+    &-message{
+        margin: 50px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    &-text{
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+    }
+    &-back{
+        margin: 30px auto;
+        width: 40%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+        background: rgb(34,193,195);
+        background: linear-gradient(0deg, rgba(34,193,195,0.8) 0%, rgba(230,45,253,0.8) 100%);
+        cursor: pointer;
+        transition: 0.2s all;
+        &:hover{
+            border: 5px solid #fff;
+        }
+    }
+}
+
+
+@media(max-width: 768px){
+    .error{
+        &-text{
+            font-size: 18px;
+        }
+    }
+}
+@media(max-width: 576px){
+    .error{
+        &-back{
+            width: 60%;
+        }
+    }
+}
